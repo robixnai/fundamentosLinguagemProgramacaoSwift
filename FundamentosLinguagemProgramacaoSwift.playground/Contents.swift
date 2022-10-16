@@ -99,7 +99,7 @@ let joao = Person()
 /*
  Se você tentar acessar a propriedade numberOfRooms da residência dessa pessoa, colocando um ponto de exclamação após a residência para forçar o desempacotamento de seu valor, você acionará um erro de tempo de execução, pois não há valor de residência para desempacotar:
  */
-let roomCount = joao.residence!.numberOfRooms // isso aciona um erro de tempo de execução
+//let roomCount = joao.residence!.numberOfRooms // Isso aciona um erro de tempo de execução, descomentar para ver o erro
 /*
  O código anterior será executado quando joao.residence tem um valor diferente de nil e definirá roomCount como um valor Int contendo o número apropriado de quartos.
  No entanto, esse código sempre aciona um erro de tempo de execução quando residence é nil, conforme foi observado quando executamos o código.
